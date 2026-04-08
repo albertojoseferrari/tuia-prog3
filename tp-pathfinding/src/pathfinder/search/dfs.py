@@ -38,6 +38,3 @@ class DepthFirstSearch:
                     if grid.objective_test(ss):
                         return Solution(nn, expanded)
                     frontier.add(nn)
-                    #expanded[ss] = True   # ← AGREGÁ ESTA LÍNEA
-
-        #return NoSolution(expanded)
