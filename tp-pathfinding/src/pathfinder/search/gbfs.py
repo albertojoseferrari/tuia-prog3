@@ -24,7 +24,7 @@ class GreedyBestFirstSearch:
 
         # Initialize frontier with the root node
         frontier = PriorityQueueFrontier()
-        frontier.add(root, grid.h(root.state)) # PONER HEURISTICAAAAA
+        frontier.add(root, grid.h(root.state))
 
         while True:
             if frontier.is_empty():
@@ -38,4 +38,4 @@ class GreedyBestFirstSearch:
                 if ss not in reached or cc < reached[ss]:
                     nn = Node("", ss, cc, n, a)
                     reached[ss] = cc
-                    frontier.add(nn, grid.h(nn.state)) # PONER HEURISTICAAAAA
+                    frontier.add(nn, grid.h(nn.state))
